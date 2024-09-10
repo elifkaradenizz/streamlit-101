@@ -7,6 +7,7 @@ import  warnings
 
 warnings.filterwarnings('ignore')
 
+#streamlit ile sayfa bilgilerini düzenleme --> st.set_page_config
 st.set_page_config(page_title="Customer Segmentation", page_icon=":bar_chart:", layout="wide")
 
 st.title(":bar_chart: Customer Segmentation")
