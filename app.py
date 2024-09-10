@@ -1,7 +1,5 @@
 import streamlit as st
-
 #metin öğeleri
-import streamlit as st
 
 st.title("Proje Başlığı")  # Başlık burada yazılacak
 st.header("Ana Başlık")  # Ana başlık burada yazılacak
@@ -15,8 +13,20 @@ Markdown formatında metin yazabilirsiniz.
 
 **Kalın metin** ve *eğik metin* kullanabilirsiniz.
 """)  # Markdown içeriği burada yazılacak
+st.caption("Hadi istediğin bir açıklamayı yaz buraya!") # Caption açıklaması
+
+code= print("Merhaba, streamlit!")
+st.code('''
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(5, 7)
+print("Sonuç:", result)
+''', language='python') # Python kodu burada yazılacak
 
 
+
+########################################################################################
 
 # Kullanıcıdan metin girdisi alma --> input 
 user_input = st.text_area("Lütfen özetlemek istediğiniz metni buraya yapıştırın:")
