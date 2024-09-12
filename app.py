@@ -1,4 +1,15 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
+#st write
+x = 42
+st.write("Değişkenin değeri:", x)
+st.divider()
+data = {'Ad': ['Ali', 'Ayşe', 'Mehmet'],
+        'Yaş': [25, 30, 22]}
+df = pd.DataFrame(data)
+st.write("Veri tablosu:", df)
+st.divider()
 #metin öğeleri
 
 st.title("Proje Başlığı")  # Başlık burada yazılacak
