@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import matplotlib.pyplot as plt
+
 #st write
 x = 42
 st.write("Değişkenin değeri:", x)
@@ -9,6 +11,19 @@ data = {'Ad': ['Ali', 'Ayşe', 'Mehmet'],
         'Yaş': [25, 30, 22]}
 df = pd.DataFrame(data)
 st.write("Veri tablosu:", df)
+st.divider()
+# Veriler
+x = np.linspace(0, 50, 100)
+y = np.sin(x)
+
+# Grafik oluşturma
+fig, ax = plt.subplots()
+ax.plot(x, y)
+#ax: Bu grafik alanının içine yerleştirilen bir ekseni (axis) temsil eder. 
+#Genellikle bir eksen, x ve y eksenlerinin olduğu bir çizim alanını ifade eder.
+
+# Grafik yazdırma
+st.write(fig)
 st.divider()
 #metin öğeleri
 
