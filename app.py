@@ -3,6 +3,18 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+#st.map Kullanımı
+#st.map fonksiyonu bir Pandas DataFrame'e ihtiyaç duyar.
+######################################################
+#Ayrıca, herhangi bir Streamlit metodunu çağırmadan uygulamanıza yazabilirsiniz. 
+#Çünkü Streamlit, "st.write()" komutunu otomatik destekler, yani bu komutu hiç kullanmanıza gerek kalmaz !
+df = pd.DataFrame({
+  'S1': [1, 2, 3, 4],
+  'S2': [10, 20, 30, 40]
+})
+df
+st.divider()
+
 #st write
 x = 42
 st.write("Değişkenin değeri:", x)
